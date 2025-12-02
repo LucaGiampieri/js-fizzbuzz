@@ -1,0 +1,54 @@
+/* CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERICS */
+
+body{
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 20px;
+    margin: 50px 400px;
+    justify-content: space-between;
+    color: white;
+    background-color: aliceblue;
+    padding: 50px 30px;
+    border-radius: 40px;
+}
+
+.btn { 
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* LIST NUMBERS */
+
+.fizz{
+    background-color: green;
+
+}
+
+.buzz{
+    background-color: darkolivegreen;
+}
+
+.fizzbuzz{ 
+    background-color: darkgreen;
+}
+
+.num{
+    background-color: black;
+   
+}
+

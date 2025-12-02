@@ -16,24 +16,29 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 //creo un ciclo che mi permetta di stampare i numeri da 1 a 100
 
+let numbList = "";
+
 for (let i = 1; i <= 100; i++){
     //selezionbiamo sia i multipli di 3 che di 5 
     if  ( i % 3 === 0 && i % 5 === 0){
-    n = '<li class"fizzbuzz>FIZZBUZZ</li>';
+        numbList += '<li class="fizzbuzz btn">FIZZBUZZ</li>';
     } 
     //selezioniamo i multipli di 3 
     else if ( i % 3 === 0){
-        n = '<li class"fizz>FIZZ</li>';
+        numbList += '<li class="fizz btn">FIZZ</li>';
     } 
     //selezioniamo i multipli di 5    
     else if ( i % 5 === 0){
-        n = '<li class"buzz">BUZZ</li>';
+        numbList += '<li class="buzz btn">BUZZ</li>';
     }  
     //il resto dei numeri
     else {
-        n = `<li class"num"> ${i} </li>`;
+        numbList += `<li class="num btn"> ${i} </li>`;
     }
-  
-    console.log(n);
-    numberList.innerHTML += n;
+
+    console.log(numbList);
 }
+
+numberList.innerHTML = numbList;
+
+   
