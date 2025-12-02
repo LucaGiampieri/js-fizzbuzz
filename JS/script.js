@@ -17,23 +17,23 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 //creo un ciclo che mi permetta di stampare i numeri da 1 a 100
 
 for (let i = 1; i <= 100; i++){
-    //selezioniamo i multipli di 3
-    if ( i % 3 === 0){
-        n = 'FIZZ';
-    }
+    //selezionbiamo sia i multipli di 3 che di 5 
+    if  ( i % 3 === 0 && i % 5 === 0){
+    n = '<li class"fizzbuzz>FIZZBUZZ</li>';
+    } 
+    //selezioniamo i multipli di 3 
+    else if ( i % 3 === 0){
+        n = '<li class"fizz>FIZZ</li>';
+    } 
     //selezioniamo i multipli di 5    
     else if ( i % 5 === 0){
-        n = 'BUZZ';
-    }  
-    //selezionbiamo sia i multipli di 3 che di 5 
-    else if ( i % 3 === 0 && i % 5 === 0){
-        n = 'FIZZBUZZ';
+        n = '<li class"buzz">BUZZ</li>';
     }  
     //il resto dei numeri
     else {
-        n = i
+        n = `<li class"num"> ${i} </li>`;
     }
   
     console.log(n);
-    numberList.innerHTML += `<li> ${n} </li>`;
+    numberList.innerHTML += n;
 }
